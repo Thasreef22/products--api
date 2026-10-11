@@ -1,4 +1,4 @@
-package uk.ac.westminster.products_api;
+package lk.ac.iit.products_api;
 
 /**
  * Week 1 starter class.
