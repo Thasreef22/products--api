@@ -16,4 +16,14 @@ public class ProductController {
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
+
+    @GetMapping("/products/{id}")
+    public Product getProductById(@PathVariable Long id) {
+        return productService.getProductById(id).orElse(null);
+    }
+
+    @PostMapping("/products")
+    public Product addProduct(@RequestBody Product product) {
+        return productService.addProduct(product);
+    }
 }
